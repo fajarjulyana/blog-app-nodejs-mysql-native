@@ -83,7 +83,7 @@ To access the login, navigate to `/register/`.
 - Sequelize
 - MySQL
 - EJS (Embedded JavaScript templating)
-- TinyMCE(for rich text editing)
+- TinyMCE (for rich text editing)
 
 ## License
 
