@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Post</title>
+    <!-- TinyMCE -->
+    <script src="https://cdn.tiny.cloud/1/ktjqtn97l51fscb4iu879v7cpgm7iw1mf7exrme3ecbs96ep/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+    <script>
+        tinymce.init({
+            selector: '#editor',
+            plugins: 'codesample advlist autolink lists link image charmap preview anchor textcolor searchreplace visualblocks code fullscreen insertdatetime media table paste code help wordcount',
+            toolbar: 'undo redo | bold italic underline | fontselect fontsizeselect | forecolor backcolor | alignleft aligncenter alignright alignjustify | outdent indent | numlist bullist |link image| codesample | removeformat | help',
+            menubar: false,
+            height: 500,
+            setup: function (editor) {
+                editor.on('change', function () {
+                    editor.save();
+                });
+            }
+        });
+    </script>
+</head>
+<body>
+    <h1>Update Post</h1>
+    <form action="/posts/edit/<%= post.id %>" method="POST">
+        <input type="text" name="title" placeholder="Post Title" value="<%= post.title %>" required class="form-control"><br><br>
+        <input type="text" name="thumbnail" placeholder="Thumbnail URL"><br><br>
+        <textarea name="content" id="editor" required class="form-control"><%= post.content %></textarea><br><br>
+        <button type="submit" class="btn btn-success">Update Post</button>
+    </form>
+</body>
+</html>
