@@ -82,7 +82,7 @@ To access the admin panel, navigate to `/admin/posts`.
 - Sequelize
 - MySQL
 - EJS (Embedded JavaScript templating)
-- CKEditor (for rich text editing)
+- TinyMCE(for rich text editing)
 
 ## License
 
