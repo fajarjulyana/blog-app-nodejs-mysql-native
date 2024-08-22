@@ -15,8 +15,8 @@ This is a simple blog application built using Node.js, Express, Sequelize, and M
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/fajarjulyana/blog-app-nodejs-mysql.git
-   cd blog-app-nodejs-mysql
+   git clone https://github.com/fajarjulyana/blog-app-nodejs-mysql-native.git
+   cd blog-app-nodejs-mysql-native
    ```
 
 2. **Install dependencies:**
