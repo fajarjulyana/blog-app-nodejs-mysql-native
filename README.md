@@ -74,6 +74,7 @@ An admin panel has been set up to manage blog posts. From the panel, you can:
 - Edit or delete existing posts.
 
 To access the admin panel, navigate to `/admin/posts`.
+To access the login, navigate to `/register/`.
 
 ## Dependencies
 
